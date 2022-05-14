@@ -14,7 +14,7 @@ final class ViewController: UIViewController, FactoryModule {
     let window: UIWindow
     let viewModel: ViewModel.Factory
   }
-
+  
   struct Payload {
 
   }

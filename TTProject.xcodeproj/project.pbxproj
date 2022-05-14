@@ -11,13 +11,11 @@
 		0E4AC3AD27DB32E500404381 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4AC3AC27DB32E500404381 /* SceneDelegate.swift */; };
 		0E4AC3B427DB32E700404381 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E4AC3B327DB32E700404381 /* Assets.xcassets */; };
 		0E4AC3B727DB32E700404381 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E4AC3B527DB32E700404381 /* LaunchScreen.storyboard */; };
-		0E4B661E280565190059ACFA /* RxFlow in Frameworks */ = {isa = PBXBuildFile; productRef = 0E4B661D280565190059ACFA /* RxFlow */; };
-		0EC78436282A2FAB009217C4 /* Pure in Frameworks */ = {isa = PBXBuildFile; productRef = 0EC78435282A2FAB009217C4 /* Pure */; };
-		0EC78438282A4469009217C4 /* CompositionRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC78437282A4469009217C4 /* CompositionRoot.swift */; };
+		0EC78438282A4469009217C4 /* AppDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC78437282A4469009217C4 /* AppDependency.swift */; };
 		0EC8F417282B59EE002FE394 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC8F416282B59EE002FE394 /* ViewModel.swift */; };
 		0EC8F419282B59F3002FE394 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC8F418282B59F3002FE394 /* Model.swift */; };
-		0ED3758F2822581E0005082B /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 0ED3758E2822581E0005082B /* Swinject */; };
 		0ED37592282258800005082B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED37591282258800005082B /* ViewController.swift */; };
+		6923549D282D2733001A4B90 /* Pure in Frameworks */ = {isa = PBXBuildFile; productRef = 6923549C282D2733001A4B90 /* Pure */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +25,7 @@
 		0E4AC3B327DB32E700404381 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E4AC3B627DB32E700404381 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E4AC3B827DB32E700404381 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0EC78437282A4469009217C4 /* CompositionRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionRoot.swift; sourceTree = "<group>"; };
+		0EC78437282A4469009217C4 /* AppDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependency.swift; sourceTree = "<group>"; };
 		0EC8F416282B59EE002FE394 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		0EC8F418282B59F3002FE394 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		0ED37591282258800005082B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,9 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EC78436282A2FAB009217C4 /* Pure in Frameworks */,
-				0E4B661E280565190059ACFA /* RxFlow in Frameworks */,
-				0ED3758F2822581E0005082B /* Swinject in Frameworks */,
+				6923549D282D2733001A4B90 /* Pure in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +86,7 @@
 			children = (
 				0E4AC3AA27DB32E500404381 /* AppDelegate.swift */,
 				0E4AC3AC27DB32E500404381 /* SceneDelegate.swift */,
-				0EC78437282A4469009217C4 /* CompositionRoot.swift */,
+				0EC78437282A4469009217C4 /* AppDependency.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -122,9 +118,7 @@
 			);
 			name = TTProject;
 			packageProductDependencies = (
-				0E4B661D280565190059ACFA /* RxFlow */,
-				0ED3758E2822581E0005082B /* Swinject */,
-				0EC78435282A2FAB009217C4 /* Pure */,
+				6923549C282D2733001A4B90 /* Pure */,
 			);
 			productName = TTProject;
 			productReference = 0E4AC3A727DB32E500404381 /* TTProject.app */;
@@ -155,9 +149,7 @@
 			);
 			mainGroup = 0E4AC39E27DB32E500404381;
 			packageReferences = (
-				0E4B661C280565190059ACFA /* XCRemoteSwiftPackageReference "RxFlow" */,
-				0ED3758D2822581E0005082B /* XCRemoteSwiftPackageReference "Swinject" */,
-				0EC78434282A2FAB009217C4 /* XCRemoteSwiftPackageReference "Pure" */,
+				6923549B282D2733001A4B90 /* XCRemoteSwiftPackageReference "Pure" */,
 			);
 			productRefGroup = 0E4AC3A827DB32E500404381 /* Products */;
 			projectDirPath = "";
@@ -186,7 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EC8F417282B59EE002FE394 /* ViewModel.swift in Sources */,
-				0EC78438282A4469009217C4 /* CompositionRoot.swift in Sources */,
+				0EC78438282A4469009217C4 /* AppDependency.swift in Sources */,
 				0ED37592282258800005082B /* ViewController.swift in Sources */,
 				0EC8F419282B59F3002FE394 /* Model.swift in Sources */,
 				0E4AC3AB27DB32E500404381 /* AppDelegate.swift in Sources */,
@@ -402,47 +394,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		0E4B661C280565190059ACFA /* XCRemoteSwiftPackageReference "RxFlow" */ = {
+		6923549B282D2733001A4B90 /* XCRemoteSwiftPackageReference "Pure" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/RxSwiftCommunity/RxFlow";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
-			};
-		};
-		0EC78434282A2FAB009217C4 /* XCRemoteSwiftPackageReference "Pure" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/devxoul/Pure#lazy-dependency";
+			repositoryURL = "https://github.com/devxoul/Pure";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 1.0.0;
 			};
 		};
-		0ED3758D2822581E0005082B /* XCRemoteSwiftPackageReference "Swinject" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Swinject/Swinject";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		0E4B661D280565190059ACFA /* RxFlow */ = {
+		6923549C282D2733001A4B90 /* Pure */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 0E4B661C280565190059ACFA /* XCRemoteSwiftPackageReference "RxFlow" */;
-			productName = RxFlow;
-		};
-		0EC78435282A2FAB009217C4 /* Pure */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0EC78434282A2FAB009217C4 /* XCRemoteSwiftPackageReference "Pure" */;
+			package = 6923549B282D2733001A4B90 /* XCRemoteSwiftPackageReference "Pure" */;
 			productName = Pure;
-		};
-		0ED3758E2822581E0005082B /* Swinject */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0ED3758D2822581E0005082B /* XCRemoteSwiftPackageReference "Swinject" */;
-			productName = Swinject;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -1,59 +1,34 @@
 {
-  "pins" : [
-    {
-      "identity" : "nimble",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/Quick/Nimble.git",
-      "state" : {
-        "revision" : "7a46a5fc86cb917f69e3daf79fcb045283d8f008",
-        "version" : "8.1.2"
+  "object": {
+    "pins": [
+      {
+        "package": "Nimble",
+        "repositoryURL": "https://github.com/Quick/Nimble.git",
+        "state": {
+          "branch": null,
+          "revision": "7a46a5fc86cb917f69e3daf79fcb045283d8f008",
+          "version": "8.1.2"
+        }
+      },
+      {
+        "package": "Pure",
+        "repositoryURL": "https://github.com/devxoul/Pure",
+        "state": {
+          "branch": null,
+          "revision": "59ad1a492e97061527fd4896c3a6342afd9fa186",
+          "version": "1.1.4"
+        }
+      },
+      {
+        "package": "Quick",
+        "repositoryURL": "https://github.com/Quick/Quick.git",
+        "state": {
+          "branch": null,
+          "revision": "8cce6acd38f965f5baa3167b939f86500314022b",
+          "version": "3.1.2"
+        }
       }
-    },
-    {
-      "identity" : "pure#lazy-dependency",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/devxoul/Pure#lazy-dependency",
-      "state" : {
-        "revision" : "59ad1a492e97061527fd4896c3a6342afd9fa186",
-        "version" : "1.1.4"
-      }
-    },
-    {
-      "identity" : "quick",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/Quick/Quick.git",
-      "state" : {
-        "revision" : "8cce6acd38f965f5baa3167b939f86500314022b",
-        "version" : "3.1.2"
-      }
-    },
-    {
-      "identity" : "rxflow",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/RxSwiftCommunity/RxFlow",
-      "state" : {
-        "revision" : "8114d4781b9c5de693ed225cfb28ca3b695b023a",
-        "version" : "2.12.4"
-      }
-    },
-    {
-      "identity" : "rxswift",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/ReactiveX/RxSwift.git",
-      "state" : {
-        "revision" : "b4307ba0b6425c0ba4178e138799946c3da594f8",
-        "version" : "6.5.0"
-      }
-    },
-    {
-      "identity" : "swinject",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/Swinject/Swinject",
-      "state" : {
-        "revision" : "f10b6e9ebff440f985c43008f7c2d097639fcb81",
-        "version" : "2.8.1"
-      }
-    }
-  ],
-  "version" : 2
+    ]
+  },
+  "version": 1
 }
